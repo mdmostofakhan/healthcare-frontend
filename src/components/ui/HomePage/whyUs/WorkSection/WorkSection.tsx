@@ -18,11 +18,13 @@ const WorkSection = () => {
              </Typography>
          </Box>
 
-         <Grid>
-            <Grid size={6}>
+         <Grid mt={5}>
+            <Grid size={6} >
                 <Image src={img} width={600} height={600} alt="woman"></Image>
             </Grid>
-            <Grid size={6}></Grid>
+            <Grid size={6}>
+                
+            </Grid>
          </Grid>
       </Container>
     );

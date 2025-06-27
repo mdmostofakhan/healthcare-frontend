@@ -32,7 +32,7 @@ const servicesData = [
 const WhyUs = () => {
 
     return (
-        <Container>
+        <Container sx={{backgroundColor: "red"}}>
             <Box sx={{textAlign: "center"}}>
                  <Typography variant="h6" component="h1" color="primary" fontWeight={700} sx={{}}>
                       Why Us
@@ -84,7 +84,8 @@ const WhyUs = () => {
                      <Box sx={{display: "flex", gap: "5px", marginTop: "10px", 
                           backgroundColor: "rgba(245, 245, 245, 1)",
                           padding: "20px",
-                          borderRadius: "10px 100px 10px 5px  "
+                          borderRadius: "10px 100px 10px 5px",
+                          
                      }}>
                          <Image src={servicesData[0].imageSer} width={50} height={50} alt="img icon"></Image>
                          <Box sx={{}}>
@@ -94,9 +95,16 @@ const WhyUs = () => {
                      </Box>
                  </Grid>
 
-                 <Grid size={6}>
-                    <Box  sx={{ width: 300,  borderRadius: "40px", overflow: "Hidden" }}>
-                         <Image src={img}  alt="choose img" ></Image>
+                 <Grid size={6} sx={{
+                     display: "flex" 
+                 }}>
+                    <Box  sx={{ width: 300,  borderRadius: "40px",  margin: "0 auto", justifyContent: "center",
+                         overflow: "Hidden",
+                         "&; img" : {
+                            height: "400px"
+                          }
+                         }}>
+                         <Image src={img} width={300}  alt="choose img" ></Image>
                     </Box>
                  </Grid>
             </Grid>
